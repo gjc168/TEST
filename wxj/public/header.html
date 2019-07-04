@@ -1,0 +1,277 @@
+<!-- <!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/comm.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+</head>
+<body> -->
+<div class="container">
+    <!--上部分，左，中，右-->
+    <div class="row">
+        <div class="col-lg-4 col-md-12"></div>
+        <div class="col-lg-4 col-md-12 mt-2"></div>
+        <div class="col-lg-4 col-md-12 p-0 mt-2">
+            <!-- 面包屑导航-->
+            <ul class="breadcrumb p-0 ml-3">
+                <li class="breadcrumb-item">
+                    <a href="#" id="head">
+                        <img src="../images/index/care1.png"/>请登录
+                    </a>
+                </li>
+                <li class="breadcrumb-item" style="margin-left:0px;">
+                    <a href="#" id="head">
+                        <img src="../images/index/order1.png"/>消息
+                    </a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#" id="head">
+                        <img src="../images/index/order.png"/>百宝箱
+                    </a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a class="text-muted" href="#" id="head">
+                       <img src="../images/index/phone.png"/>手机无限极
+                    </a>
+                </li>
+              
+            </ul>
+        </div>
+    </div>
+  <!--头部中间部分-->
+    <div class="header2">
+       <div class="p-tb-8">
+               <a href="www.infinitus.com.cn">
+                   <img src="../images/index/logo.png" class="logo">
+               </a>
+               <span>
+                   <a href="index.html" class="zx">资讯</a>
+                   <a href="product.html" class="cp">产品</a>
+               </span>
+               <span class="qr">
+                   <img src="../images/index/app2.png" class="qr1 qr-right">
+                   <p style="text-align:left;margin-left:20px;">无限极服务</p>
+               </span>
+               <span class="qr">
+                   <img src="../images/index/app.png" class="qr1">
+                   <p>无限极中国APP</p>
+               </span>
+        </div>
+    </div>
+    <br>
+</div>
+ <!-- 下部分，主导航-->
+    <hr>
+    <ul class="nav box-shadow" id="main">
+        <li class="nav-item" style="margin-left:150px;">
+            <a href="index.html" class="nav-link text-muted">首页</a>
+        </li>
+		<li class="nav-item">
+            <a href="news.html" class="nav-link text-muted"  id="flip">公司要闻</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link text-muted" id="flip2">走进无极限</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link text-muted" id="flip3">健康人生</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link text-muted" id="flip4">社会责任</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link text-muted" id="flip5">服务大厅</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link text-muted" id="flip6">其它</a>
+        </li>
+    </ul>
+    <!-- 导航栏公司要闻下滑菜单 -->
+    <div class="b row" id="panel" style="position:absolute;z-index:999;background-color:#f5f5f5;">
+      <div class="col-2 ml120" id="f">
+        <ul class="menu-list mt20">
+            <li><a href="company-dynamic.html" class="font16">公司动态</a></li>
+        </ul>
+        <ul class="menu-list mt5" >    
+            <li><a href="company-news.html" class="font12">公司新闻</a></li>
+        </ul>
+        <ul class="menu-list mt5">   
+            <li><a href="media-report.html" class="font12">媒体报道</a></li>     
+        </ul>
+        <ul class="menu-list mt5">  
+                <li><a href="digital-platform.html" class="font12">数码平台推广</a></li>     
+        </ul>
+        <ul class="menu-list mt5">  
+                <li><a href="local-presence.html" class="font12">地方风采</a></li>     
+        </ul>
+      </div>
+      <div class="col-2 ml-65">
+            <ul class="menu-list mt20">
+                <li><a href="#" class="font16">产品快讯</a></li>
+            </ul>
+            <ul class="menu-list mt5">    
+                <li><a href="#" class="font12">售后资讯</a></li>
+            </ul>
+       </div>
+       <div class="col-2 ml-65">
+            <ul class="menu-list mt20">
+                <li><a href="#" class="font16">事业无限</a></li>
+            </ul>
+            <ul class="menu-list mt5">    
+                <li><a href="#" class="font12">海外培训</a></li>
+            </ul>
+            <ul class="menu-list mt5">   
+                <li><a href="#" class="font12">规范专区</a></li>     
+            </ul>
+       </div>    
+    </div>
+    <!--导航栏走进无限极下滑菜单-->
+    <div class="b row" id="panel2" style="position:absolute;z-index:999;background-color:#f5f5f5;">
+        <div class="col-2 ml120">
+          <ul class="menu-list mt20">
+              <li><a href="" class="font16">董事长寄语</a></li>
+          </ul>
+        </div>
+        <div class="col-2 ml-65">
+              <ul class="menu-list mt20">
+                  <li><a href="#" class="font16">公司介绍</a></li>
+              </ul>
+              <ul class="menu-list mt5">    
+                  <li><a href="#" class="font12">公司简介</a></li>
+              </ul>
+              <ul class="menu-list mt5">    
+                <li><a href="#" class="font12">发展历程</a></li>
+              </ul>
+              <ul class="menu-list mt5">    
+                <li><a href="#" class="font12">企业荣誉</a></li>
+              </ul>
+              <ul class="menu-list mt5">    
+                <li><a href="#" class="font12">企业之歌</a></li>
+              </ul>
+         </div>
+         <div class="col-2 ml-65">
+              <ul class="menu-list mt20">
+                  <li><a href="#" class="font16">企业文化</a></li>
+              </ul>
+              <ul class="menu-list mt5">    
+                  <li><a href="#" class="font12">思利及人</a></li>
+              </ul>
+              <ul class="menu-list mt5">   
+                  <li><a href="#" class="font12">自动波</a></li>     
+              </ul>
+              <ul class="menu-list mt5">   
+                <li><a href="#" class="font12">永远创业</a></li>     
+              </ul>
+         </div>
+         <div class="col-2 ml-65">
+            <ul class="menu-list mt20">
+                <li><a href="#" class="font16">健康理念</a></li>
+            </ul>
+            <ul class="menu-list mt5">    
+                <li><a href="#" class="font12">解读</a></li>
+            </ul>
+         </div>        
+    </div>
+    <!--导航栏健康人生下滑菜单-->
+    <div class="b row" id="panel3" style="position:absolute;z-index:999;background-color:#f5f5f5;">
+        <div class="col-2 ml120">
+          <ul class="menu-list mt20">
+            <li><a href="" class="font16">养生固本</a></li>
+          </ul>
+          <ul class="menu-list mt5">    
+            <li><a href="#" class="font12">养生之道</a></li>
+          </ul>
+        </div>
+    </div> 
+    <!--导航栏社会责任下滑菜单-->
+    <div class="b row" id="panel4" style="position:absolute;z-index:999;background-color:#f5f5f5;">
+        <div class="col-2 ml120">
+          <ul class="menu-list mt20">
+            <li><a href="" class="font16">社会责任观</a></li>
+          </ul>
+        </div> 
+        <div class="col-2 ml-65">
+            <ul class="menu-list mt20">
+                <li><a href="#" class="font16">CSR报告</a></li>
+            </ul>
+        </div>
+        <div class="col-2 ml-65">
+            <ul class="menu-list mt20">
+                <li><a href="#" class="font16">思利及人公益基金会</a></li>
+            </ul>
+        </div> 
+        <div class="col-2 ml-65">
+            <ul class="menu-list mt20">
+                <li><a href="#" class="font16">公益动态</a></li>
+            </ul>
+        </div>                   
+    </div> 
+    <!--导航栏健康人生下滑菜单-->
+    <div class="b row" id="panel5" style="position:absolute;z-index:999;background-color:#f5f5f5;">
+        <div class="col-2 ml120">
+          <ul class="menu-list mt20">
+            <li><a href="" class="font16">联系我们</a></li>
+          </ul>
+          <ul class="menu-list mt5">    
+            <li><a href="#" class="font12">客服热线</a></li>
+          </ul>
+        </div>
+    </div> 
+    <!--导航栏社会责任下滑菜单-->
+    <div class="b row" id="panel6" style="position:absolute;z-index:999;background-color:#f5f5f5;">
+        <div class="col-2 ml120">
+          <ul class="menu-list mt20">
+            <li><a href="" class="font16">视频</a></li>
+          </ul>
+        </div> 
+        <div class="col-2 ml-65">
+            <ul class="menu-list mt20">
+                <li><a href="#" class="font16">图库</a></li>
+            </ul>
+        </div>
+        <div class="col-2 ml-65">
+            <ul class="menu-list mt20">
+                <li><a href="#" class="font16">应用中心</a></li>
+            </ul>
+        </div>                    
+    </div>         
+</div>
+<!-- <script>
+    控制下拉菜单显示隐藏方法1： 
+$("#panel").hide();
+$("#flip").hover(
+        function(){
+            $("#panel").slideDown("slow");//show();
+    },function(){
+            $("#panel").hide()});//为了鼠标可以进入下拉框
+    $("#panel").hover(function() {
+        $(this).show();//鼠标进入下拉框
+    },function(){
+        $(this).hide();
+    });
+
+  控制下拉菜单显示隐藏方法2： 
+  $("#panel").hide();
+ $("#flip").mouseenter(
+     function(){
+        $("#panel").css("display","block");
+     }
+ )
+ $("#panel").mouseenter(
+    function(){
+        $("#panel").css("display","block");
+     }
+ )
+ $("#panel").mouseleave(
+    function(){
+         $("#panel").css("display","none");
+    }
+ )
+ </script>-->
+</body>
+</html>  

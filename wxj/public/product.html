@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/comm.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+	<link rel="stylesheet" href="css/header.css"/>
+	<link rel="stylesheet" href="css/product.css"/>
+
+    <style>
+        /*��дָʾ������ʽ*/
+        .carousel-indicators li{
+            width:15px;height:15px;
+            background-color:#fff;
+            margin-left:6px;
+            margin-right:6px;
+            border-radius: 50%;
+        }
+      
+        /*��д���Ҽ�ͷ����ʽ*/
+        .carousel-control-prev,
+        .carousel-control-next{
+            width:4%;height:20%;
+            background-color:#aaa;
+            top:40%;
+            border-radius:0.25rem;
+        }
+
+        div{display:block;}
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- 上部分，左，中，右-->
+    <div class="row">
+        <div class="col-lg-4 col-md-12"></div>
+        <div class="col-lg-4 col-md-12 mt-2"></div>
+        <div class="col-lg-4 col-md-12 p-0 mt-2">
+            <!-- 面包屑导航-->
+            <ul class="breadcrumb p-0 ml-3">
+                <li class="breadcrumb-item">
+                    <a href="#">
+                        <img src="../images/index/care1.png"/>请登录
+                    </a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">
+                        <img src="../images/index/order.png"/>消息
+                    </a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">
+                        <img src="../images/index/order1.png"/>百宝箱
+                    </a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a class="text-muted" href="#">手机无限极</a>
+                </li>
+              
+            </ul>
+        </div>
+    </div>
+    <div class="header2">
+       <div class="p-tb-8">
+               <a href="www.infinitus.com.cn">
+                   <img src="../images/index/logo.png" class="logo">
+               </a>
+               <span>
+                   <a href="" class="zx2">资讯</a>
+                   <a href="" class="cp2">产品</a>
+               </span>
+               <span class="qr">
+                   <img src="../images/index/app2.png" class="qr1">
+                   <p>无限极中国APP</p>
+               </span>
+               <span class="qr">
+                   <img src="../images/index/app.png" class="qr1">
+                   <p>无限极服务</p>
+               </span>
+
+
+       </div>
+    </div>
+</div>
+<hr>
+<div class="con">
+	<div id="demo" class="carousel" data-ride="carousel">
+        <!--1.�ֲ�ͼƬ-->
+        <div class="carousel-inner hw2">
+            <div class="carousel-item active">
+                <img src="../images/product/lunbo4.jpg"/>
+            </div>
+            <div class="carousel-item">
+                <img src="../images/product/lunbo3.png"/>
+            </div>
+            
+        </div>
+        <!--2.���Ҽ�ͷ-->
+        <!--<a data-slide="next" href="#demo" class="carousel-control-next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+        <a data-slide="prev" href="#demo" class="carousel-control-prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>-->
+	</div>
+</div>
+<!--轮播图下第一行图片-->
+<div class="clearfix product-line1">
+   <div class="a">
+	<span class="line1">促销活动</span>
+   </div>
+   <div class="b">
+	<span class="line1">全部产品</span>
+   </div>
+</div>
+<!--文字标题-->
+<div class="text-center">
+   <span class="font22">品牌系列</span>
+   <br>
+   <span class="font16">Series Product</span>
+</div>
+<!--第二行图片-->
+<div class="mp-0 wm">
+    <a href="#" class="pic-1 mr12">
+    <div class="pic-word">无限极健康食品</div>
+    <img src="../images/product/eproduct-3.png" class="w-370">
+</a>
+    <a href="#" class="pic-1 mr12">
+        <div class="pic-word">萃雅护肤品</div>
+        <img src="../images/product/eproduct-4.png" class="w-370">
+    </a>
+    <a href="#" class="pic-1">
+        <div class="pic-word">心维雅护肤品</div>
+        <img src="../images/product/eproduct-5.png" class="w-370">
+    </a>
+    <a href="#" class="pic-1 mr12">
+        <div class="pic-word">享优乐养生用品</div>
+        <img src="../images/product/eproduct-6.png" class="w-370">
+    </a>
+    <a href="#" class="pic-1 mr12">
+        <div class="pic-word">植雅个人护理品</div>
+        <img src="../images/product/eproduct-7.png" class="w-370">
+    </a>
+    <a href="#" class="pic-1">
+        <div class="pic-word">帮得佳家具用品</div>
+        <img src="../images/product/eproduct-8.png" class="w-370">
+    </a>
+</div>
+<!--底部-->
+<div class="h60"></div>
+<div class="footer float-left" style="width:100%;">
+    <!--  -->
+    <div class="container p50">
+        <div class="row" style="background-color:#5d5d58;">
+            <div class="col-3">
+                <h3>走进无限极</h3>
+                <ul id="bb">
+                    <li id="cc">
+                        <a href="#" target="_blank" style="text-align:left;">董事长寄语</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h3>热点聚焦</h3>
+                <ul id="bb">
+                    <li id="cc">
+                        <a href="#" target="_blank">公司动态</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h3>健康产品</h3>
+                <ul id="bb">
+                    <li id="cc">
+                        <a href="#" target="_blank">产品系列</a>
+                    </li>
+                </ul>
+                <ul id="bb">
+                    <li id="cc">
+                        <a href="#" target="_blank">售后服务</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h3>服务大厅</h3>
+                <ul id="bb">
+                    <li id="cc">
+                        <a href="#" target="_blank">联系我们</a>
+                    </li>
+                </ul>
+                <ul id="bb">
+                    <li id="cc">
+                        <a href="#" target="_blank">客服热线</a>
+                    </li>
+                </ul>
+                <ul id="bb">
+                    <li id="cc">
+                        <a href="#" target="_blank">企业证照</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="footer-second float-left">
+    <div class="plr5030">
+        <div class="footer-nav">
+            <span> <a href="#" target="_blank">李锦记健康产品集团</a></span>
+            <span> <a href="#" target="_blank">国家工商总局直销行业管理</a></span>
+            <span> <a href="#" target="_blank"> 产品批次报告查询</a></span>
+            <span> <a href="#" target="_blank">国际联网备案登记证书</a></span>
+            <span> <a href="#" target="_blank">直销信息披露</a></span>
+            <span> <a href="#" target="_blank">版权所有©2017 无限极（中国）</a></span>
+            <span> <a href="#" target="_blank">[粤ICP备05041458]</a></span>
+            <span> <a href="#" target="_blank">粤公网安备44010602005995号</a></span>
+        </div>
+    </div>
+
+</div>

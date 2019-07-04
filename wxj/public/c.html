@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function get_data_type_change(get_data_type) {
+    $(".material_cat_tr, .subject_id_tr").css('display', 'none');
+    if(get_data_type == 14){
+        $(".material_cat_tr").css('display', '');
+    }else if(get_data_type == 15){
+        $(".subject_id_tr").css('display', '');
+    }
+}
+
+//初始化
+$(function(){
+    get_data_type_change({$data.get_data_type});
+});
+</script>
+
+<select name="get_data_type" onchange="get_data_type_change(this.value)">
+    <option value="14">分类</option>
+    <option value="15">主题</option>
+</select>
+</body>
+</html>

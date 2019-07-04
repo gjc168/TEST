@@ -1,0 +1,116 @@
+<!-- 15.写代码 -->
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/login.css"/>
+</head>
+<body>
+  <div class="logo">
+     <div class="container">
+	   <div class="row">
+	      <div class="col-12">
+		     <img src="../images/login/logo.png" alt="">
+		  </div>
+	   </div> 
+	 </div>
+  </div>
+  <hr class="splitter">
+  <div class="content">
+    <div class="login-wrap">
+	  <div class="container">
+	    <div class="row">
+		  <div class="col-12 prz2" >
+		     <!-- 登录框表头 -->
+		     <div class="pull-right login-panel" style="height: 372px;">
+			    <div  class="fl text-a login-method" id="pwd">
+				  <a href="javascript:;" id="pwdLogin">账户登录</a>
+				</div> 
+				<div class="fr text-a login-method bd-l bd-b bc" id="qrcode">
+				  <a href="javascript:;" id="qrcodeLogin">扫码登录</a>
+				</div>
+				<!-- 登录方式一：卡号登录 -->
+				<div id="loginPanel">
+					<!-- <div style="border:1px solid red;height:10px;margin-top:50px;"></div> -->
+					<div class="bd user mr1">
+					  <div class="icon-style">
+						 <img src="./images/login/user.png" style="margin:12px 9px;">
+					  </div>
+					  <input type="text" class="input-style" id="cid">
+					</div>
+					       <!-- 密码输入框 -->
+					<div class="bd user mr2">
+					  <div class="icon-style">
+						 <img src="../../../images/login/pwd.png" style="margin:12px 9px;">
+					  </div>
+					  <input type="text" class="input-style" id="upwd">
+					</div>
+					        <!-- 验证码 -->
+					<div class="pb12">
+					   <input type="text" placeholder="验证码" class="form-control" style="width:72px;height:40px;margin-left:30px;text-align:center;">
+					   <img src="images/login/code1.png">
+					   <a href="#">看不清楚换一张</a>
+					</div>
+					         <!-- 复选框已阅读 -->
+					<div class="pb22 ml30">
+					   <input type="checkbox">
+					   <span style="font-size:12px;">已阅读并同意</span>
+					   <a class="useragreement" href="#">《用户协议》</a>
+					   、
+					   <a class="useragreement" href="#">《隐私权政策》</a>
+					</div>
+					          <!-- 登录按钮 -->
+					<div class="pb16 ml30">
+					   <input type="button" class="btn-login " value="登&nbsp;&nbsp;&nbsp;&nbsp;录" onclick="login()">
+					</div>
+					           <!-- 忘记密码 -->
+					<a href="" class="ml30">忘记密码</a>
+					<a href="" style="margin-left:100px;">新用户获取密码</a>
+				</div>
+                <!--登录方式二： 二维码登录 -->
+				<div id="loginPanel2" class="qrcode-style">
+				   <div style="padding:50px 20px 52px 20px">
+				      <div class="code-border">
+					      <img src="../images/login/qrcode4login.png" alt="">
+					  </div>
+					  <div style="margin-top:20px;margin-left:50px;">
+					     请用
+						 <a href="" class="app">无限极App/</a>
+						 &nbsp;&nbsp;微信扫码登录
+					  </div>
+				   </div>
+				</div>
+             </div>
+
+          </div>
+        </div>
+	  </div>
+	</div>
+  </div>
+<script src="../js/login.js"></script>
+<script>
+    function login(){
+		console.log(cid.value);
+		var xhr=new XMLHttpRequest();
+		xhr.onreadystatechange=function(){
+			if(xhr.readyState==4&&xhr.status==200){
+				var result=xhr.responseText;
+				alert(result);
+			}
+		}
+		//打开连接，创建请求
+		xhr.open("post","/user/login",true);
+		//修改请求头
+		xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+		var formdata="cid="+cid.value+"&upwd="+upwd.value;
+		xhr.send(formdata);
+
+	}
+</script>
+</body>
+</html>
+<!--16.启动服务器，在浏览器输入127.0.0.1:8080/login1.html，输入已有卡号161829531，密码123456，提交后会弹出登录成功-->
